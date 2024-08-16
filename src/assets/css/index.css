@@ -34,6 +34,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 .main {
@@ -257,3 +258,28 @@ progress {
   font-size: inherit;
   padding: 0.8rem;
 }
+
+@media(max-width: 700px) {
+  .app-header {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+}
+
+@media(max-width: 600px) {
+  .main {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media(max-width: 458px) {
+  h1 {
+    font-size: clamp(4em, 2.5em, 1em);
+  }
+}
+
